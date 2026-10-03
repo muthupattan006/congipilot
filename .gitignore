@@ -1,0 +1,11 @@
+# Build and log artifacts
+**/build/
+**/install/
+**/log/
+**/logs/
+**/node_modules/
+**/__pycache__/
+*.pyc
+
+# Zephyr RTOS workspace (>2.8 GB, contains binary packfiles >100MB rejected by GitHub)
+ws/

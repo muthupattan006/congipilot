@@ -1,0 +1,444 @@
+{
+  "configById": {
+    "congipilot-joystick.CogniPilot Joystick!3i8jpy6": {
+      "topic": "/cerebri/in/joy"
+    },
+    "3D!18i6zy7": {
+      "layers": {
+        "845139cb-26bc-40b3-8161-8ab60af4baf5": {
+          "visible": true,
+          "frameLocked": true,
+          "label": "Grid",
+          "instanceId": "845139cb-26bc-40b3-8161-8ab60af4baf5",
+          "layerId": "foxglove.Grid",
+          "size": 10,
+          "divisions": 10,
+          "lineWidth": 1,
+          "color": "#248eff",
+          "position": [
+            0,
+            0,
+            0
+          ],
+          "rotation": [
+            0,
+            0,
+            0
+          ],
+          "order": 1
+        }
+      },
+      "cameraState": {
+        "perspective": true,
+        "distance": 3.1555842957345184,
+        "phi": 50.474858359359764,
+        "thetaOffset": -46.61208179657046,
+        "targetOffset": [
+          -0.23531930636136072,
+          0.1771858904189439,
+          4.263630779559438e-16
+        ],
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-pose",
+      "scene": {
+        "transforms": {
+          "showLabel": true,
+          "axisScale": 1,
+          "lineWidth": 5,
+          "enablePreloading": false,
+          "editable": false,
+          "labelSize": 0.12
+        }
+      },
+      "transforms": {
+        "frame:odom": {
+          "visible": true
+        },
+        "frame:map": {
+          "visible": true
+        },
+        "frame:base_link": {
+          "visible": false
+        },
+        "frame:camera_link_optical": {
+          "visible": false
+        },
+        "frame:": {
+          "visible": false
+        },
+        "frame:camera_link": {
+          "visible": false
+        },
+        "frame:lidar_link": {
+          "visible": false
+        },
+        "frame:base_footprint": {
+          "visible": false
+        }
+      },
+      "topics": {
+        "/slam_toolbox/scan_visualization": {
+          "visible": false
+        },
+        "/scan": {
+          "visible": false,
+          "colorField": "intensity",
+          "colorMode": "colormap",
+          "colorMap": "turbo"
+        },
+        "/robot_description": {
+          "visible": true
+        },
+        "/map": {
+          "visible": true,
+          "frameLocked": false,
+          "colorMode": "map",
+          "alpha": 1
+        },
+        "/local_costmap/costmap": {
+          "visible": false,
+          "colorMode": "custom"
+        },
+        "/local_costmap/scan": {
+          "visible": false
+        },
+        "/path": {
+          "visible": false,
+          "lineWidth": 0.1,
+          "type": "line",
+          "gradient": [
+            "#0088ff85",
+            "#0088ff85"
+          ]
+        },
+        "/plan": {
+          "visible": true
+        },
+        "/plan_smoothed": {
+          "visible": false
+        },
+        "/received_global_plan": {
+          "visible": false
+        },
+        "/unsmoothed_plan": {
+          "visible": false
+        },
+        "/move_base_simple/goal": {
+          "visible": false
+        },
+        "/slam_toolbox/graph_visualization": {
+          "visible": false
+        },
+        "/lookahead_collision_arc": {
+          "visible": false
+        },
+        "/local_costmap/published_footprint": {
+          "visible": false
+        },
+        "/global_costmap/published_footprint": {
+          "visible": true
+        },
+        "/pose": {
+          "visible": false
+        },
+        "/local_costmap/clearing_endpoints": {
+          "visible": false
+        },
+        "/goal_pose": {
+          "visible": false
+        },
+        "/global_costmap/costmap": {
+          "visible": true,
+          "colorMode": "costmap"
+        },
+        "/global_costmap/scan": {
+          "visible": false
+        },
+        "/initialpose": {
+          "visible": false
+        },
+        "/goal_pose_estimate": {
+          "visible": false
+        },
+        "/ov5645/image_raw": {
+          "visible": true,
+          "frameLocked": true,
+          "cameraInfoTopic": "/ov5645/camera_info",
+          "distance": 1,
+          "planarProjectionFactor": 0,
+          "color": "#ffffff"
+        },
+        "/ov5645/camera_info": {
+          "visible": true
+        },
+        "/camera/image_raw/compressed": {
+          "visible": true,
+          "cameraInfoTopic": "/camera/camera_info"
+        },
+        "/camera/camera_info": {
+          "visible": true
+        }
+      },
+      "publish": {
+        "type": "pose",
+        "poseTopic": "/goal_pose",
+        "pointTopic": "/goal_point",
+        "poseEstimateTopic": "/goal_pose_estimate",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "imageMode": {},
+      "followTf": "map"
+    },
+    "Image!dzx5t6": {
+      "cameraState": {
+        "distance": 20,
+        "perspective": true,
+        "phi": 60,
+        "target": [
+          0,
+          0,
+          0
+        ],
+        "targetOffset": [
+          0,
+          0,
+          0
+        ],
+        "targetOrientation": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "thetaOffset": 45,
+        "fovy": 45,
+        "near": 0.5,
+        "far": 5000
+      },
+      "followMode": "follow-pose",
+      "scene": {},
+      "transforms": {},
+      "topics": {},
+      "layers": {},
+      "publish": {
+        "type": "point",
+        "poseTopic": "/move_base_simple/goal",
+        "pointTopic": "/clicked_point",
+        "poseEstimateTopic": "/initialpose",
+        "poseEstimateXDeviation": 0.5,
+        "poseEstimateYDeviation": 0.5,
+        "poseEstimateThetaDeviation": 0.26179939
+      },
+      "imageMode": {
+        "imageTopic": "/camera/image_raw/compressed",
+        "calibrationTopic": "/camera/camera_info"
+      },
+      "foxglovePanelTitle": "Camera"
+    },
+    "RawMessages!1ydg0gi": {
+      "diffEnabled": false,
+      "diffMethod": "custom",
+      "diffTopicPath": "",
+      "showFullMessageForDiff": false,
+      "topicPath": "/cerebri/out/status.status_message",
+      "fontSize": 18
+    },
+    "Gauge!33y8apv": {
+      "path": "/cerebri/out/status.fuel_percentage",
+      "minValue": 0,
+      "maxValue": 100,
+      "colorMap": "turbo",
+      "colorMode": "gradient",
+      "gradient": [
+        "#ffff00fa",
+        "#00ff00ff"
+      ],
+      "reverse": false,
+      "foxglovePanelTitle": "Fuel"
+    },
+    "Indicator!1iukamu": {
+      "path": "/cerebri/out/status.fuel",
+      "style": "background",
+      "fallbackColor": "#171717",
+      "fallbackLabel": "Waiting",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "1",
+          "color": "#ffff00",
+          "label": "Critical"
+        },
+        {
+          "operator": "=",
+          "rawValue": "2",
+          "color": "#c7ff00",
+          "label": "Low"
+        },
+        {
+          "operator": "=",
+          "rawValue": "3",
+          "color": "#00ff00",
+          "label": "Nominal"
+        }
+      ],
+      "foxglovePanelTitle": "Fuel Status"
+    },
+    "Indicator!3ealhln": {
+      "path": "/cerebri/out/status.safety",
+      "style": "background",
+      "fallbackColor": "#171717",
+      "fallbackLabel": "Waiting",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "1",
+          "color": "#00ff00",
+          "label": "SAFETY ON"
+        },
+        {
+          "operator": "=",
+          "rawValue": "2",
+          "color": "#ff0000",
+          "label": "SAFETY OFF"
+        }
+      ],
+      "foxglovePanelTitle": "SAFETY STATUS"
+    },
+    "Indicator!dweyid": {
+      "path": "/cerebri/out/status.arming",
+      "style": "background",
+      "fallbackColor": "#171717",
+      "fallbackLabel": "Waiting",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "1",
+          "color": "#00ff00",
+          "label": "DISARMED"
+        },
+        {
+          "operator": "=",
+          "rawValue": "2",
+          "color": "#ff0000",
+          "label": "ARMED"
+        },
+        {
+          "operator": "=",
+          "rawValue": "3",
+          "color": "#ffff00",
+          "label": "DISARMED BATTERY CRITICAL!!!"
+        }
+      ],
+      "foxglovePanelTitle": "STATE"
+    },
+    "Indicator!9k4ufh": {
+      "path": "/cerebri/out/status.mode",
+      "style": "background",
+      "fallbackColor": "#171717",
+      "fallbackLabel": "Waiting",
+      "rules": [
+        {
+          "operator": "=",
+          "rawValue": "0",
+          "color": "#ffffff",
+          "label": "Select Mode"
+        },
+        {
+          "operator": "=",
+          "rawValue": "1",
+          "color": "#00ff00",
+          "label": "Manual"
+        },
+        {
+          "operator": "=",
+          "rawValue": "2",
+          "color": "#ff0000",
+          "label": "Auto"
+        },
+        {
+          "operator": "=",
+          "rawValue": "3",
+          "color": "#0000ff",
+          "label": "cmd_vel"
+        },
+        {
+          "operator": "=",
+          "rawValue": "4",
+          "color": "#ffff00",
+          "label": "Calibration"
+        }
+      ],
+      "foxglovePanelTitle": "MODE"
+    }
+  },
+  "globalVariables": {
+    "": "\"\"",
+    "globalVariable": 0
+  },
+  "userNodes": {
+    "7f43e8d8-6f62-4e9e-b773-57adf07af2bb": {
+      "sourceCode": "// This example shows how to subscribe to multiple input topics.\n//\n// NOTE:\n// User Scripts can subscribe to multiple input topics, but can only publish on a single topic.\n\nimport { Input } from \"./types\";\n\ntype Output = { topic: string };\ntype GlobalVariables = { id: number };\n\n// List all the input topics in the `input` array\nexport const inputs = [\"/input/topic\", \"/input/another\"];\nexport const output = \"/studio_script/output_topic\";\n\n// Make an InputEvent type alias. Since our script will get a message from either input topic, we need to enumerate the topics.\ntype InputEvent = Input<\"/input/topic\"> | Input<\"/input/another\">;\n\nexport default function script(event: InputEvent, globalVars: GlobalVariables): Output {\n  // Remember that your script will get messages on each topic, so you\n  // need to check each event's topic to know which fields are available on the message.\n  switch (event.topic) {\n    case \"/input/topic\":\n      // topic specific input logic\n      // Our message fields are specific to our topic message\n      break;\n    case \"/input/another\":\n      // another specific logic\n      break;\n  }\n\n  // Scripts can only output one type of message regardless of the inputs\n  // Here we echo back the input topic as an example.\n  return {\n    topic: event.topic,\n  };\n};\n",
+      "name": "7f43e8d8"
+    }
+  },
+  "playbackConfig": {
+    "speed": 1
+  },
+  "layout": {
+    "first": "congipilot-joystick.CogniPilot Joystick!3i8jpy6",
+    "second": {
+      "first": "3D!18i6zy7",
+      "second": {
+        "first": {
+          "first": {
+            "first": {
+              "first": {
+                "first": "Image!dzx5t6",
+                "second": "RawMessages!1ydg0gi",
+                "direction": "column",
+                "splitPercentage": 62.74131274131274
+              },
+              "second": "Gauge!33y8apv",
+              "direction": "column",
+              "splitPercentage": 78.0416453319679
+            },
+            "second": "Indicator!1iukamu",
+            "direction": "column",
+            "splitPercentage": 84.69945355191257
+          },
+          "second": "Indicator!3ealhln",
+          "direction": "column",
+          "splitPercentage": 86.81214421252372
+        },
+        "second": {
+          "first": "Indicator!dweyid",
+          "second": "Indicator!9k4ufh",
+          "direction": "column",
+          "splitPercentage": 52.38095238095236
+        },
+        "direction": "column",
+        "splitPercentage": 76.99050401753105
+      },
+      "direction": "row",
+      "splitPercentage": 78.08683683683684
+    },
+    "direction": "row",
+    "splitPercentage": 19.759036144578314
+  }
+}
